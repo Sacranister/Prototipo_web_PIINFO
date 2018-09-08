@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Icon, Row, Col, Button } from 'antd';
 import { Route, Link } from 'react-router-dom';
-export default class Favoritos extends Component{
+export default class Usuariohome extends Component{
   render(){
     return(
       <div>
@@ -33,7 +33,8 @@ export default class Favoritos extends Component{
             </Card>
           </Col>
           <Col span={20}>
-            <Card title="Favoritos" bordered={false} style={{ width: '100%' }}>
+            <Card title="Inicio" bordered={false} style={{ width: '100%' }}>
+              Bienvenido
             </Card>
           </Col>
         </Row>

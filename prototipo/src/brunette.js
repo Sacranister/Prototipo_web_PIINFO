@@ -6,7 +6,7 @@ import { Collapse, Icon } from 'antd';
 const { Header, Content, Footer } = Layout;
 const TabPane = Tabs.TabPane;
 const Panel = Collapse.Panel;
-export default class PeluqueriaSirena extends Component{
+export default class PeluqueriaBrunette extends Component{
   render(){
     return(
       <div>
@@ -38,13 +38,13 @@ export default class PeluqueriaSirena extends Component{
             </Card>
           </Col>
           <Col span={20}>
-
-            <Card title="Salón Pelo de Sirena" bordered={false} style={{ width: '100%' }}>
+            <Card title="Salón Brunette" bordered={false} style={{ width: '100%' }}>
               <Row>
-                <Col span={8}><img style={{ width: '100%' }} src="https://images.jumpseller.com/store/pelo-de-sirena/store/logo/Recurso_1.png?0" alt="Flowers in Chania" /></Col>
+                <Col span={8}><img style={{ width: '60%', display: 'block', 'margin-left': 'auto', 'margin-right': 'auto'}}
+                              src="https://static.wixstatic.com/media/5a9216_cffc0dc8b725460b846391abe71f429d~mv2.jpg/v1/fill/w_223,h_71,al_c,q_80,usm_0.66_1.00_0.01/5a9216_cffc0dc8b725460b846391abe71f429d~mv2.webp" alt="Logo Brunette Estetica" /></Col>
                 <Col span={16} style={{ padding: '0 50px' }}>
                   <div >
-                    <h3> Tienda en Providencia, Santiago, Chile. </h3>
+                    <h3> Tienda en Ñuñoa, Santiago, Chile. </h3>
                     <h3> Atendemos todo tipo de cabellos, teñidos y cortes. </h3>
                     <h3> Abierto:10:00 - 20:00 </h3>
                     <Button >Agendar</Button>
@@ -76,7 +76,7 @@ export default class PeluqueriaSirena extends Component{
                         <img style={{ width: '100%' }} src="https://z-p3-scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/14344863_1079948795433797_4463937148588593532_n.jpg?_nc_cat=0&oh=7fdc12716883fcd9e978315ade2f7f54&oe=5BC1E314" alt="Flowers in Chania" />
 
                         <div><Button style={{}}>Perfil</Button><Button onClick={this.agendar} style={{float: 'right'}}>
-                          <Link to="/usuario/peluqueria/Sirenas/Caro/agendar">
+                          <Link to="/usuario/peluqueria/Brunettes/Caro/agendar">
                             Agendar
                           </Link>
                         </Button></div>
@@ -94,7 +94,7 @@ export default class PeluqueriaSirena extends Component{
                         <img style={{ width: '100%' }} src="https://z-p3-scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/13886472_1049212798507397_6365398063076238057_n.jpg?_nc_cat=0&oh=597fa8d49283691c8af9df20d18a8d66&oe=5BBF10CF" alt="Flowers in Chania" />
 
                         <div><Button style={{}}>Perfil</Button><Button style={{float: 'right'}}>
-                          <Link to="/usuario/peluqueria/Sirenas/Pamela/agendar">
+                          <Link to="/usuario/peluqueria/Brunettes/Pamela/agendar">
                             Agendar
                           </Link>
                         </Button></div>
@@ -108,7 +108,7 @@ export default class PeluqueriaSirena extends Component{
                   <Card>
                     <Row>
                       <Col span={12}>
-                        <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Trinidad%20125%2C%20La%20Florida+(Peluqueria%20Sirena)&ie=UTF8&t=&z=16&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Mapa Google</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe>
+                        <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Vicu%C3%B1a%20Mackena%201048%2C%20%C3%91u%C3%B1oa%2C%20Santiago%2C%20Chile+(Peluqueria%20Brunette%20Est%C3%A9tica)&ie=UTF8&t=&z=16&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Google Map</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe>
                       </Col>
                       <Col span={12}>
                         <h3>Dónde estamos</h3>
@@ -124,6 +124,8 @@ export default class PeluqueriaSirena extends Component{
             </Card>
           </Col>
         </Row>
+
+
 
       </div>
     );
