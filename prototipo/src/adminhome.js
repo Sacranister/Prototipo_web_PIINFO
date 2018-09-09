@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Card, Icon, Row, Col, Button } from 'antd';
-import { Route, Link } from 'react-router-dom';
-export default class Usuariohome extends Component{
+import { Card, Row, Col} from 'antd';
+import { Link } from 'react-router-dom';
+export default class Adminhome extends Component{
   render(){
     return(
       <div>
@@ -15,10 +15,13 @@ export default class Usuariohome extends Component{
               <Link to="/admin/perfil">
                 Perfil
               </Link><br/>
+              <Link to="/admin/locales">
+                Locales
+              </Link><br/>
 
 
-              <Link to="/admin/prestadores">
-                Prestadores
+              <Link to="/admin/Estadisticas">
+                Estadisticas
               </Link><br/>
 
               <Link to='/'>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Card, Icon, Row, Col, Button } from 'antd';
 export default class Peluquerias extends Component{
   render(){

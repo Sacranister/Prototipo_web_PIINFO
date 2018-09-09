@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import './App.css';
-import { Layout, Menu, Card, Row, Col, Button, Tabs } from 'antd';
+import { Layout, Menu } from 'antd';
 import 'antd/dist/antd.css';
 import Home from './home';
 import Usuariohome from './usuariohome';
-import Adminhome from './adminhome';
 import Agendar from './agendar';
 import Cuenta from './cuenta';
 import Favoritos from './favs';
@@ -14,10 +13,16 @@ import Mensajes from './mensajes';
 import Peluquerias from './peluquerias';
 import PeluqueriaSirena from './sirena';
 import PeluqueriaBrunette from './brunette';
-import { Collapse, Icon } from 'antd';
+
+import Adminhome from './adminhome';
+import Adminperfil from './adminperfil';
+import Adminlocales from './adminlocales';
+import Adminprestadores from './adminprestadores'
+
+import Prestadorperfil from './prestadorperfil';
+import Prestadorhorario from './prestadorhorario';
+
 const { Header, Content, Footer } = Layout;
-const TabPane = Tabs.TabPane;
-const Panel = Collapse.Panel;
 
 
 class App extends Component {
@@ -43,7 +48,6 @@ class App extends Component {
           <Content style={{ padding: '0 50px' }}>
             <Route exact path="/" component={Home}/>
             <Route path="/usuario/home" component={Usuariohome}/>
-            <Route path="/admin/home" component={Adminhome}/>
             <Route path="/usuario/micuenta" component={Cuenta}/>
             <Route path="/usuario/favs" component={Favoritos}/>
             <Route path="/usuario/mensajes" component={Mensajes}/>
@@ -56,6 +60,13 @@ class App extends Component {
             <Route path="/usuario/peluqueria/Brunettes/Pamela/agendar" component={Agendar}/>
             <Route path="/usuario/peluqueria/Brunettes/Caro/agendar" component={Agendar}/>
 
+            <Route path="/admin/home" component={Adminhome}/>
+            <Route path="/admin/perfil" component={Adminperfil}/>
+            <Route path="/admin/locales" component={Adminlocales}/>
+            <Route path="/admin/Estadisticas" component={Adminprestadores}/>
+
+            <Route path="/Prestador/perfil" component={Prestadorperfil}/>
+            <Route path="/Prestador/horario" component={Prestadorhorario}/>
 
           </Content>
           <Footer style={{ textAlign: 'center' }}>

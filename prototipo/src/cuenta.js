@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon, Row, Col, Button } from 'antd';
+import { Card} from 'antd';
 
 export default class Cuenta extends Component{
   render(){

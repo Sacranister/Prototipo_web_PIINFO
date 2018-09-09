@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
-import { Layout, Menu, Card, Row, Col, Button, Tabs } from 'antd';
+import { Link } from 'react-router-dom';
+import { Card, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
-import { Collapse, Icon } from 'antd';
-import { Table, Divider, Tag } from 'antd';
+import { Table } from 'antd';
 
-const { Header, Content, Footer } = Layout;
-const TabPane = Tabs.TabPane;
-const Panel = Collapse.Panel;
 
 const dataSource = [{
 key: '1',

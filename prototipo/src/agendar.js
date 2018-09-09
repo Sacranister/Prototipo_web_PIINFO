@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
-import { Layout, Menu, Card, Row, Col, Button, Tabs, Modal, DatePicker } from 'antd';
+import { Link } from 'react-router-dom';
+import { Card, Row, Col, Button, Tabs, Modal, DatePicker } from 'antd';
 import 'antd/dist/antd.css';
 import moment from 'moment';
-import { Collapse, Icon } from 'antd';
-const { Header, Content, Footer } = Layout;
 const TabPane = Tabs.TabPane;
-const Panel = Collapse.Panel;
 
 export default class Agendar extends Component{
   state = { visible: false }
@@ -28,9 +25,8 @@ export default class Agendar extends Component{
     });
   }
   render(){
-    const { MonthPicker, RangePicker } = DatePicker;
+
     const dateFormat = 'DD/MM/YYYY';
-    const monthFormat = 'MM/YYYY';
     return(
       <div>
         <Row>

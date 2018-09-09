@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Icon, Row, Col, Button } from 'antd';
-import { Route, Link } from 'react-router-dom';
+import { Card, Row, Col } from 'antd';
+import { Link } from 'react-router-dom';
 export default class Favoritos extends Component{
   render(){
     return(

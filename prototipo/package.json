@@ -4,7 +4,11 @@
   "private": true,
   "dependencies": {
     "antd": "^3.6.5",
+    "aws-sdk": "^2.311.0",
     "react": "^16.4.1",
+    "react-d3-basic": "^1.6.11",
+    "react-d3-charts": "^1.0.46",
+    "react-d3-components": "^0.9.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4"
