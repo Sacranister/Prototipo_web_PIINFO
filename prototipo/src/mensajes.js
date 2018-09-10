@@ -19,7 +19,7 @@ export default class Mensajes extends Component{
 
 
               <Link to="/usuario/peluquerias">
-                Peluquerias
+                Peluquerías
               </Link><br/>
 
               <Link to="/usuario/mensajes">

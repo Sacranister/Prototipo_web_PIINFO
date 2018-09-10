@@ -71,16 +71,16 @@ export default class Adminperfil extends Component{
                       <Input />
                     </FormItem>
                     <FormItem
-                      label="Gender"
+                      label="Genero"
                       labelCol={{ span: 5 }}
                       wrapperCol={{ span: 12 }}
                     >
 
                       <Select
-                        placeholder="Select a option and change input text above"
+                        placeholder="Selecciona una opción"
                       >
-                        <Option value="male">male</Option>
-                        <Option value="female">female</Option>
+                        <Option value="male">masculino</Option>
+                        <Option value="female">feminino</Option>
                       </Select>
 
                     </FormItem>

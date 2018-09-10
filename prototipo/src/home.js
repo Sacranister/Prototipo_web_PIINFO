@@ -26,7 +26,7 @@ export default class Home extends Component{
     return(
       <div><Modal
         style={{ width: '100%' }}
-        title="Que deseas ver:"
+        title="Perfiles"
         visible={this.state.visible}
         onOk={this.handleOk}
         onCancel={this.handleCancel}

@@ -43,7 +43,7 @@ export default class Agendar extends Component{
 
 
               <Link to="/usuario/peluquerias">
-                Peluquerias
+                Peluquerías
               </Link><br/>
 
               <Link to="/usuario/mensajes">

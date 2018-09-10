@@ -23,7 +23,7 @@ export default class PeluqueriaBrunette extends Component{
 
 
               <Link to="/usuario/peluquerias">
-                Peluquerias
+                Peluquerías
               </Link><br/>
 
               <Link to="/usuario/mensajes">
@@ -46,7 +46,7 @@ export default class PeluqueriaBrunette extends Component{
                     <h3> Tienda en Ñuñoa, Santiago, Chile. </h3>
                     <h3> Atendemos todo tipo de cabellos, teñidos y cortes. </h3>
                     <h3> Abierto:10:00 - 20:00 </h3>
-                    
+
                   </div>
                 </Col>
               </Row>
