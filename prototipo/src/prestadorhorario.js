@@ -31,8 +31,8 @@ export default class Prestadorhorario extends Component{
   }
   render(){
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/prestador/perfil">
@@ -46,8 +46,8 @@ export default class Prestadorhorario extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
-            <Card title="Mi Horario" bordered={false} style={{ width: '100%' }}>
+          <Col span={20} style={{ height:'100%' }}>
+            <Card title="Mi Horario" bordered={false} style={{ width: '100%', height:'100%' }}>
 
               <Calendar onSelect={this.showModal}  fullscreen={false} onPanelChange={onPanelChange} />
             </Card>

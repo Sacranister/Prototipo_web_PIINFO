@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default class Prestadorperfil extends Component{
   render(){
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/prestador/perfil">
@@ -19,12 +19,12 @@ export default class Prestadorperfil extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
-            <Card title="Mi Perfil" bordered={false} style={{ width: '100%' }}>
+          <Col span={20} style={{ height:'100%' }}>
+            <Card title="Mi Perfil" bordered={false} style={{ width: '100%', height:'100%' }}>
               <Row>
                 <Col span={24}>
                   <Card title='Fotos'>
-                    <img style={{ width: '100%' }} src="https://www.mujerde10.com/wp-content/uploads/2016/12/nombres-de-tecnicas-y-tintes-para-cabello.jpg" alt="Servicios tinturas" />
+                    <img style={{ width: '85%' }} src="https://www.mujerde10.com/wp-content/uploads/2016/12/nombres-de-tecnicas-y-tintes-para-cabello.jpg" alt="Servicios tinturas" />
                     <img style={{ width: '20%','margin-left':'10px', 'margin-top':'10px' }} src="https://www.mujerde10.com/wp-content/uploads/2016/12/nombres-de-tecnicas-y-tintes-para-cabello.jpg" alt="Servicios tinturas" />
                     <img style={{ width: '20%','margin-left':'10px', 'margin-top':'10px' }} src="https://www.mujerde10.com/wp-content/uploads/2016/12/nombres-de-tecnicas-y-tintes-para-cabello.jpg" alt="Servicios tinturas" />
                     <img style={{ width: '20%','margin-left':'10px', 'margin-top':'10px' }} src="https://www.mujerde10.com/wp-content/uploads/2016/12/nombres-de-tecnicas-y-tintes-para-cabello.jpg" alt="Servicios tinturas" />

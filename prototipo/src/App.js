@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import './App.css';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Row, Col, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import Home from './home';
 import Usuariohome from './usuariohome';
@@ -18,6 +18,8 @@ import Adminhome from './adminhome';
 import Adminperfil from './adminperfil';
 import Adminlocales from './adminlocales';
 import Adminprestadores from './adminprestadores'
+import logo from './co-red0.png';
+import logo2 from './logo_transparente.png';
 
 import Prestadorperfil from './prestadorperfil';
 import Prestadorhorario from './prestadorhorario';
@@ -28,9 +30,13 @@ const { Header, Content, Footer } = Layout;
 class App extends Component {
   render() {
     return (
-        <Layout className="layout">
+        <Layout className="layout" style= {{height: '100%'}}>
           <Header>
-            <div className="logo" />
+            <div className="logo" style={{float:'left', color: 'cornflowerblue', 'font-size': '30px', 'font-family': '-webkit-body'}} >
+              <img src={logo} width="64" height="64" />
+              CO-RED
+            </div>
+
             <Menu
               theme="dark"
               mode="horizontal"
@@ -45,7 +51,7 @@ class App extends Component {
 
             </Menu>
           </Header>
-          <Content style={{ padding: '0 50px' }}>
+          <Content style={{ padding: '0', height:'70%' }}>
             <Route exact path="/" component={Home}/>
             <Route path="/usuario/home" component={Usuariohome}/>
             <Route path="/usuario/micuenta" component={Cuenta}/>
@@ -69,8 +75,24 @@ class App extends Component {
             <Route path="/Prestador/horario" component={Prestadorhorario}/>
 
           </Content>
-          <Footer style={{ textAlign: 'center' }}>
-            CoRed
+          <Footer style={{ textAlign: 'center', 'background-color': 'black', color: 'cornflowerblue' }}>
+            <Col span={8}>
+              <h3 style={{color: 'cornflowerblue'}}>Sobre Co-Red</h3>
+              <a style={{color: 'cornflowerblue'}} >Quiénes Somos</a><br/>
+              <a style={{color: 'cornflowerblue'}} >Términos y Condiciones</a><br/>
+              <a style={{color: 'cornflowerblue'}} >Donde Estamos</a><br/>
+
+            </Col>
+            <Col span={8}>
+              <h3 style={{color: 'cornflowerblue'}} >Siguenos en redes sociales</h3>
+              <Icon type="facebook" style={{ fontSize: 32 }} /><Icon type="twitter" style={{ fontSize: 32 }} />
+
+            </Col>
+            <Col span={8}>
+              <h3 style={{color: 'cornflowerblue'}} >Contactanos</h3>
+              <Icon type="phone" theme="outlined" style={{ fontSize: 32 }} /> +56 9 82245854 <br/>
+              <Icon type="mail" theme="outlined" style={{ fontSize: 32 }} /> contacto@cored.com
+            </Col>
           </Footer>
         </Layout>
     );

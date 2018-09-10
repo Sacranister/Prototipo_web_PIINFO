@@ -8,8 +8,8 @@ const Panel = Collapse.Panel;
 export default class PeluqueriaSirena extends Component{
   render(){
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/usuario/home">
@@ -36,17 +36,17 @@ export default class PeluqueriaSirena extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
+          <Col span={20}style={{ height:'100%' }}>
 
-            <Card title="Salón Pelo de Sirena" bordered={false} style={{ width: '100%' }}>
+            <Card title="Salón Pelo de Sirena" bordered={false} style={{ width: '100%', height:'100%' }}>
               <Row>
-                <Col span={8}><img style={{ width: '100%' }} src="https://images.jumpseller.com/store/pelo-de-sirena/store/logo/Recurso_1.png?0" alt="Flowers in Chania" /></Col>
+                <Col span={8}><img style={{ width: '50%' }} src="https://images.jumpseller.com/store/pelo-de-sirena/store/logo/Recurso_1.png?0" alt="Flowers in Chania" /></Col>
                 <Col span={16} style={{ padding: '0 50px' }}>
                   <div >
                     <h3> Tienda en Providencia, Santiago, Chile. </h3>
                     <h3> Atendemos todo tipo de cabellos, teñidos y cortes. </h3>
                     <h3> Abierto:10:00 - 20:00 </h3>
-                    <Button >Agendar</Button>
+                    
                   </div>
                 </Col>
               </Row>
@@ -66,13 +66,13 @@ export default class PeluqueriaSirena extends Component{
                 </TabPane>
 
                 <TabPane tab="Profesionales" key="2">
-                  <Card style={{ width: '100%' }}>
+                  <Card style={{ width: '100%', height:'38%' }}>
                     <Row>
                       <Col span={16}>
                         <h3>Caro</h3>
                         <p>Experta en Colores Fantasia</p></Col>
                       <Col span={8}>
-                        <img style={{ width: '100%' }} src="https://z-p3-scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/14344863_1079948795433797_4463937148588593532_n.jpg?_nc_cat=0&oh=7fdc12716883fcd9e978315ade2f7f54&oe=5BC1E314" alt="Flowers in Chania" />
+                        <div><img style={{ width: '50%'}} src="https://z-p3-scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/14344863_1079948795433797_4463937148588593532_n.jpg?_nc_cat=0&oh=7fdc12716883fcd9e978315ade2f7f54&oe=5BC1E314" alt="Flowers in Chania" /></div>
 
                         <div><Button style={{}}>Perfil</Button><Button onClick={this.agendar} style={{float: 'right'}}>
                           <Link to="/usuario/peluqueria/Sirenas/Caro/agendar">
@@ -84,13 +84,13 @@ export default class PeluqueriaSirena extends Component{
                     </Row>
 
                   </Card>
-                  <Card>
+                  <Card style={{ width: '100%', height:'50%' }}>
                     <Row>
                       <Col span={16}>
                         <h3>Pamela</h3>
                         <p>¿Quieres Realizarte un cambio?, Hazlo Conmigo!</p></Col>
                       <Col span={8}>
-                        <img style={{ width: '100%' }} src="https://z-p3-scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/13886472_1049212798507397_6365398063076238057_n.jpg?_nc_cat=0&oh=597fa8d49283691c8af9df20d18a8d66&oe=5BBF10CF" alt="Flowers in Chania" />
+                        <img style={{ width: '70%' }} src="https://z-p3-scontent.faep12-1.fna.fbcdn.net/v/t1.0-9/13886472_1049212798507397_6365398063076238057_n.jpg?_nc_cat=0&oh=597fa8d49283691c8af9df20d18a8d66&oe=5BBF10CF" alt="Flowers in Chania" />
 
                         <div><Button style={{}}>Perfil</Button><Button style={{float: 'right'}}>
                           <Link to="/usuario/peluqueria/Sirenas/Pamela/agendar">

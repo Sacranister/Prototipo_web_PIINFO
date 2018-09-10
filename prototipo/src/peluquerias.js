@@ -4,9 +4,9 @@ import { Card, Icon, Row, Col, Button } from 'antd';
 export default class Peluquerias extends Component{
   render(){
     return(
-      <div>
+      <div style={{ height:'100%' }}>
 
-        <Row>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/usuario/home">
@@ -33,7 +33,7 @@ export default class Peluquerias extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
+          <Col span={20} style={{ height:'100%' }}>
             <Card title="Peluquerias" bordered={true} style={{ width: '100%', height:'100%' }}>
               <div style={{  }}>
                 <Card style={{ width: '100%' }}>
@@ -61,7 +61,7 @@ export default class Peluquerias extends Component{
                   <Row>
                     <Col span={16}>
                       <h3>Brunette Estética</h3>
-                      <p>blablabla :v :v :v</p></Col>
+                      <p>Peluqueria para cualquier tipo de cabello</p></Col>
                     <Col span={8}>
                       <img style={{ width: '60%', display: 'block', }}
                       src="https://static.wixstatic.com/media/5a9216_cffc0dc8b725460b846391abe71f429d~mv2.jpg/v1/fill/w_223,h_71,al_c,q_80,usm_0.66_1.00_0.01/5a9216_cffc0dc8b725460b846391abe71f429d~mv2.webp" alt="Logo Brunette Estetica" />

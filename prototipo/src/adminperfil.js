@@ -9,8 +9,8 @@ const Option = Select.Option;
 export default class Adminperfil extends Component{
   render(){
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/admin/home">
@@ -35,8 +35,8 @@ export default class Adminperfil extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
-            <Card title="Perfil" bordered={false} style={{ width: '100%' }}>
+          <Col span={20} style={{ height:'100%' }}>
+            <Card title="Perfil" bordered={false} style={{ width: '100%', height:'100%' }}>
               <Row>
 
 

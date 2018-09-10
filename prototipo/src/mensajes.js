@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default class Mensajes extends Component{
   render(){
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/usuario/home">
@@ -32,8 +32,9 @@ export default class Mensajes extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
-            <Card title="Mensaje Recibidos" bordered={false} style={{ width: '100%' }}>
+          <Col span={20} style={{ height:'100%' }}>
+            <Card title="Mensaje Recibidos" bordered={false} style={{ width: '100%', height:'100%' }}>
+              <Card>No tienes mensajes</Card>
             </Card>
           </Col>
         </Row>

@@ -23,8 +23,8 @@ export default class Adminprestadores extends Component{
     }
 ];
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/admin/home">
@@ -49,23 +49,27 @@ export default class Adminprestadores extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
-            <Card title="Estadisticas" bordered={false} style={{ width: '100%' }}>
-              <Col span={12}>
+          <Col span={20} style={{ height:'100%' }}>
+            <Card title="Estadisticas" bordered={false} style={{ width: '100%', height:'100%' }}>
+              <Col span={12} style={{width:'50%', height:'100%' }}>
                 <h1>Servicios Mes de Mayo por Prestador</h1>
                 <BarChart
                   data={data}
                   width={400}
                   height={400}
-                  margin={{top: 10, bottom: 50, left: 50, right: 10}}/>
+                  margin={{top: 10, bottom: 10, left: 10, right: 10}}
+                  style={{ width: '100%', height:'100%' }}
+                />
               </Col>
-              <Col span={12}>
+              <Col span={12} style={{ width:'50%', height:'100%' }}>
                 <h1>Servicios por mes 2017</h1>
                 <LineChart
                   data={data1}
                   width={400}
                   height={400}
-                  margin={{top: 100, bottom: 50, left: 50, right: 10}}/>
+                  margin={{top: 100, bottom: 10, left: 10, right: 10}}
+                  style={{ width: '100%', height:'100%' }}
+                />
               </Col>
               </Card>
           </Col>

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default class Adminhome extends Component{
   render(){
     return(
-      <div>
-        <Row>
+      <div style={{ height:'100%' }}>
+        <Row style={{ height:'100%' }}>
           <Col span={4} style={{ height:'100%' }}>
             <Card title="Acciones" bordered={true} style={{ width: '100%', height:'100%' }}>
               <Link to="/admin/home">
@@ -21,7 +21,7 @@ export default class Adminhome extends Component{
 
 
               <Link to="/admin/Estadisticas">
-                Estadisticas
+                Estadísticas
               </Link><br/>
 
               <Link to='/'>
@@ -30,9 +30,9 @@ export default class Adminhome extends Component{
 
             </Card>
           </Col>
-          <Col span={20}>
-            <Card title="Inicio" bordered={false} style={{ width: '100%' }}>
-              Bienvenido
+          <Col span={20} style={{ height:'100%' }}>
+            <Card title="Inicio" bordered={false} style={{ width: '100%', height:'100%' }}>
+              ¡Bienvenido Usuario!
             </Card>
           </Col>
         </Row>
